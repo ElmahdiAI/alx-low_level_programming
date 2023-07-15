@@ -1,10 +1,9 @@
 #include <stdio.h>
-/*
- *This is my first c code in ALX program
- *
- */
-int main()
+int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
+	/*
+	 *This is my first C code in ALX program
+	 */
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
