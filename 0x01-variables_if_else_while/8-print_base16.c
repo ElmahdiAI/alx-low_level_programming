@@ -18,6 +18,6 @@ int main(void)
 	}
 	for (c = 'A'; c <= 'F'; i++)
 		putchar(c);
-	putchra('\n');
+	putchar('\n');
 	return (0);
 }
