@@ -4,7 +4,7 @@
  *
  * Return: Success 0.
  */
-int main (void )
+int main(void) 
 {
 	char word[10] = "_putchar";
 
