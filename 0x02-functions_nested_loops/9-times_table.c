@@ -14,11 +14,11 @@ void times_table(void)
 			int result;
 
 			result = i * j;
-			_putchar(result + '0');
+			_putchar(result);
 			_putchar(',');
 			_putchar(' ');
 		}
-		_putchar((i * 9) + '0');
+		_putchar(i * 9);
 		_putchar('\n');
 	}
 }
