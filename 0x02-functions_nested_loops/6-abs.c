@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *  int _abs- check the code
+ * _abs- check the code
  * @i: number to compute abs for
  * Return: Success 0.
  */
