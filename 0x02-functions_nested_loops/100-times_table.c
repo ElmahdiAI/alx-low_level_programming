@@ -19,12 +19,14 @@ void print_times_table(int n)
 				result = i * j;
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
 				if (result <= 9)
 					_putchar(result);
-				_putchar(n \ 10 + '0');
+				_putchar(n / 10 + '0');
 				_putchar(n % 10 + '0');
 			}
+			_putchar('\n');
 		}
 	}
-	putchar('0'};
 }
