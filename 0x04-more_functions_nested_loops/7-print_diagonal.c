@@ -6,16 +6,19 @@
 */
 void print_diagonal(int n)
 {
-	int i, j;
-
-	if (n <= 0)
-		_putchar('\n');
-	for (i = 0; i < n; i++)
+	int l, s;
+	
+	if (n > 0)
 	{
-		for (j = 1; j <= i; j++)
+		for (l = 0; l < n; l++)
 		{
-			_putchar(' ');
+			for (s = 0; s < l; s++)
+				_putchar(' ');
+			_putchar('\\');
+			if (l == (n - 1))
+				continue;
+			_putchar('\n');
 		}
-		_putchar('\\');
 	}
+	_putchar('\n');
 }
