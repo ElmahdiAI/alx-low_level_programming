@@ -5,6 +5,7 @@
  * _strcat - concatenates two strings
  * @src: string source
  * @dest: string destinataire
+ * Return: returns poiner
  *******************************************************
  *******************************************************/
 char *_strcat(char *dest, char *src)
@@ -21,6 +22,5 @@ char *_strcat(char *dest, char *src)
 		i++;
 		j++;
 	}
-	dest[i] = '\0';
-	return *dest;
+	return dest;
 }
