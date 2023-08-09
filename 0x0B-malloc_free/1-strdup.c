@@ -5,16 +5,15 @@
  * space in memory, which contains a copy of the string given as a parameter.
  * @str: string to add
  * Return: NULL if str = NULL, NULL if insufficient memory was available
-
  */
- char *_strdup(char *str)
- {
- 	int i, size = 0;
- 	char *string;
+char *_strdup(char *str)
+{
+	int i, size = 0;
+	char *string;
 
- 	if (str == NULL)
+	if (str == NULL)
 		return (NULL);
- 	while (str[size] != '\0')
+	while (str[size] != '\0')
 	{
 		size++;
 	}
@@ -27,4 +26,4 @@
 	}
 	string[size] = '\0';
 	return (string);
- }
+}

@@ -8,13 +8,13 @@
  * Return: return NULL on failure
  * If width or height is 0 or negative, return NULL
  */
- int **alloc_grid(int width, int height)
- {
- 	int i, **grid;
+int **alloc_grid(int width, int height)
+{
+	int i, **grid;
 
- 	if (width <= 0|| height <= 0)
+	if (width <= 0 || height <= 0)
 		return (NULL);
-	grid = (int **)malloc(sizeof(int*) * width);
+	grid = (int **)malloc(sizeof(int) * width);
 	if (grid == NULL)
 		return (NULL);
 	for (i = 0; i < width; i++)
@@ -24,4 +24,4 @@
 			return (NULL);
 	}
 	return (grid);
- }
+}
