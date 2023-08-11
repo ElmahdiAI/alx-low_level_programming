@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * malloc_checked- a function that allocates memory using malloc.
  * @b: width of array
@@ -8,9 +7,9 @@
 void *malloc_checked(unsigned int b)
 {
 	void *array;
-	
+
 	array = malloc(b);
-	if (!array)
-		return (98);
+	if (array == NULL)
+		exit (98);
 	return (array);
 }
