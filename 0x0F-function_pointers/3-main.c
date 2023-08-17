@@ -8,7 +8,7 @@
 * @argv: an array of argument strings
 * Return: 0 in success.
 */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int a, b, result;
 	char *op;
