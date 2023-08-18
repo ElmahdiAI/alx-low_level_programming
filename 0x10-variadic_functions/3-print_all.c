@@ -16,6 +16,8 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	char *store;
 
+	while (format == NULL)
+		return;
 	va_start(args, format);
 	while (format[i] != '\0')
 	{
@@ -33,7 +35,10 @@ void print_all(const char * const format, ...)
 		case 's':
 			store = va_arg(args, char*);
 			if (store == NULL)
+			{
 				printf("(nil)");
+				break;
+			}
 			printf("%s", store);
 		break;
 		default:
