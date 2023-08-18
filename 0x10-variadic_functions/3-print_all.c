@@ -40,12 +40,9 @@ void print_all(const char * const format, ...)
 			printf("%s", store);
 		break;
 		}
-		while (format[i + 1] != '\0' && (format[i] == 'c' || format[i] == 'i'
+		if (format[i + 1] != '\0' && (format[i] == 'c' || format[i] == 'i'
 		|| format[i] == 'f' || format[i] == 's'))
-		{
 			printf(", ");
-			break;
-		}
 		i++;
 	}
 	va_end(args);
