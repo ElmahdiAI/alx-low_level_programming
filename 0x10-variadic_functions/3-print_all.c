@@ -4,7 +4,7 @@
 
 /**
  * print_all-  a function that prints anything.
- * @format: a list of types of arguments passed to the function
+ * @format:  a list of types of arguments passed to the function
  * it is a constant pointer that points to a constant string.
  * The string pointed to by format cannot be modified, and the pointer
  * format itself cannot be changed to point to a different memory location.
@@ -13,7 +13,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int i = 0, flag = 1;
+	int i = 0;
 	char *store;
 
 	va_start(args, format);
@@ -41,7 +41,7 @@ void print_all(const char * const format, ...)
 			flag = 0;
 			break;
 		}
-		if (format[i + 1] != '\0' && flag == 0)
+		if (format[i + 1] != '\0' && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
 			printf(", ");
 		i++;
 	}
