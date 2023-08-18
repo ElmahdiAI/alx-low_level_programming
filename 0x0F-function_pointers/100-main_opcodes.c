@@ -8,28 +8,32 @@
  *
  *Return: on success, 1 or 2 in case of failure
  */
-
 int main(int argc, char *argv[])
 {
-	int i, numBytes;
-	unsigned char *ptr;
+	int index, bytes;
+	int (*address)(int, char **) = main;
+	unsigned char opcode;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (1);
+		exit(1);
 	}
-	numBytes = atoi(argv[1]);
-	if (numBytes <= 0)
+	bytes = atoi(argv[1]);
+	if (bytes < 0)
 	{
 		printf("Error\n");
-		return (2);
+		exit(2);
 	}
-	ptr = (unsigned char *)main;
-	for (i = 0; i < numBytes; i++)
+	for (index = 0; index < bytes; index++)
 	{
-		printf("%02x", *ptr);
-		ptr++;
+		opcode = *(unsigned char *)address;
+		printf("%.2x", opcode);
+
+		if (index == bytes - 1)
+			continue;
+		printf(" ");
+		address++;
 	}
 	printf("\n");
 	return (0);
