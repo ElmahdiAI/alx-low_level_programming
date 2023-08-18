@@ -4,9 +4,9 @@
 
 /**
  * print_all-  a function that prints anything.
- * @format:  a list of types of arguments passed to the function
- * it is a constant pointer that points to a constant string. 
- * The string pointed to by format cannot be modified, and the pointer 
+ * @format: a list of types of arguments passed to the function
+ * it is a constant pointer that points to a constant string.
+ * The string pointed to by format cannot be modified, and the pointer
  * format itself cannot be changed to point to a different memory location.
  * Return: Nothing.
 */
