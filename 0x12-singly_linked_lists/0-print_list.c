@@ -19,6 +19,5 @@ size_t print_list(const list_t *h)
 		n += 1;
 		head = head->next;
 	}
-
 	return (n);
 }
