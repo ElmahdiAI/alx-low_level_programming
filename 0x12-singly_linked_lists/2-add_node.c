@@ -10,7 +10,7 @@ int _strlen(char *str)
 {
 	int i = 0;
 
-	while (*str)
+	while (*str != '\0')
 	{
 		i++;
 		str++;
@@ -26,20 +26,20 @@ int _strlen(char *str)
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *newList;
+	list_t *newNode;
 
-	newList = malloc(sizeof(list_t));
-	if (newList && str)
+	newNode = malloc(sizeof(list_t));
+	if (newNode && str)
 	{
-		newList->str = strdup(str);
-		newList->len = _strlen(newList->str);
-		newList->next = *head;
+		newNode->str = strdup(str);
+		newNode->len = _strlen(newNode->str);
+		newNode->next = *head;
 	}
 	else
 	{
-		free(newList);
+		free(newNode);
 		return (NULL);
 	}
-	(*head) = newList;
-	return (*head);
+	(*head) = newNode;
+	return (newNode);
 }
