@@ -10,7 +10,10 @@ size_t print_listint(const listint_t *h)
 	int count = 0;
 
 	if (!h)
+	{
 		printf("(nil)");
+		return (0);
+	}
 	while (h)
 	{
 		printf("%d\n", h->n);
