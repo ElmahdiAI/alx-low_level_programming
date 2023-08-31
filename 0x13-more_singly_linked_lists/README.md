@@ -11,8 +11,6 @@
 </head>
 
 <body class="signed_in env_production notranslate" translate="no" class="notranslate" data-theme-suffix="_alx">
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4C8MF2" height="0" width="0"
-			style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="project row">
 		<div class="col-xs-12 col-md-10 col-lg-8 contains-images">
 			<h1 class="gap">0x13. C - More singly linked lists</h1>
