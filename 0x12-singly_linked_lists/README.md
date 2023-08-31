@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<meta name="google" content="notranslate">
-	<title>Project: 0x12. C - Singly linked lists | ALX Africa Intranet</title>
 	<link rel="stylesheet" href="https://use.typekit.net/xgz4ilr.css">
 	<link rel="stylesheet" media="all"
 		href="/assets/application_alx-e1aa485258dfce25ad8fa691368792000eb8217d3990ef9e64e9b1a8a1ef761b.css">
