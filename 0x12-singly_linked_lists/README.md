@@ -5,34 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<meta name="google" content="notranslate">
-	<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-N4C8MF2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		dataLayer.push({ "userId": 488834, "visitorType": "student", "batch": { "id": 99, "fullNameWithC": "AFR-0623 (C#17)", "schoolLocation": { "id": 1, "name": "ALX Africa" } }, "curriculum": { "id": 1, "name": "SE Foundations" } });
-		window.gtm_user_custom_event = function (name, options) {
-			if (typeof name === 'undefined') {
-				return;
-			}
-			window.dataLayer.push({
-				customEventOptions: typeof options !== 'undefined' ? options : {},
-				event: name,
-			});
-		}
-	</script>
 	<title>Project: 0x12. C - Singly linked lists | ALX Africa Intranet</title>
 	<link rel="stylesheet" href="https://use.typekit.net/xgz4ilr.css">
 	<link rel="stylesheet" media="all"
 		href="/assets/application_alx-e1aa485258dfce25ad8fa691368792000eb8217d3990ef9e64e9b1a8a1ef761b.css">
-	<script src="https://www.gstatic.com/charts/loader.js"></script>
 	<script src="/assets/application-54114f22a70e5f69761998e8ac495fbe3bc128fecc9e13aa1cea5d1b8aa37b6d.js"></script>
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon_alx.ico">
 	<meta name="csrf-param" content="authenticity_token">
 	<meta name="csrf-token"
 		content="pO654fo2i4ODiI0BiOFLufksY6iYUpejuur1-XZfuyJLz3RWSjClLVXOEzmGKIDlfgx6pao5YYv2WDJbjaMo2w">
 	<link rel="apple-touch-icon" href="/apple-touch-icon_alx.png">
-	<script>
-		Cookies.set('timezone', (new Date()).getTimezoneOffset() / -60.0);
-	</script>
 	<script src="/packs/js/application-65fbaa64604540bfd91e.js"></script>
 	<link rel="stylesheet" media="screen" href="/packs/css/application-87456da7.css">
 </head>
