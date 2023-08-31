@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="https://use.typekit.net/xgz4ilr.css">
 	<link rel="stylesheet" media="all"
 		href="/assets/application_alx-e1aa485258dfce25ad8fa691368792000eb8217d3990ef9e64e9b1a8a1ef761b.css">
-	<script src="/assets/application-54114f22a70e5f69761998e8ac495fbe3bc128fecc9e13aa1cea5d1b8aa37b6d.js"></script>
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon_alx.ico">
 	<meta name="csrf-param" content="authenticity_token">
 	<meta name="csrf-token"
