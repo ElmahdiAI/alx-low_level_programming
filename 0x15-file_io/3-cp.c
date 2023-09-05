@@ -30,7 +30,7 @@ int main(int ac, char **av)
 		close(file_from);
 		writing_error(av[2]);
 	}
-	while ((bytes_rd = read(file_from, buffer, 1024)) > 0)
+	while ((bytes_rd = read(file_from, buffer, 1024)) >= 0)
 	{
 		bytes_wr = write(file_to, buffer, bytes_rd);
 		if (bytes_wr == -1)
