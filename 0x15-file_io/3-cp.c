@@ -30,19 +30,21 @@ int main(int ac, char **av)
 		close(file_from);
 		writing_error(av[2]);
 	}
-	bytes_rd = read(file_from, buffer, 1024);
+	while ((bytes_rd = read(file_from, buffer, 1024)) > 0)
+	{
+		bytes_wr = write(file_to, buffer, bytes_rd);
+		if (bytes_wr == -1)
+		{
+			close(file_from);
+			close(file_to);
+			writing_error(av[2]);
+		}
+	}
 	if (bytes_rd == -1)
 	{
 		closing_error(file_from);
 		closing_error(file_to);
 		reading_error(av[1]);
-	}
-	bytes_wr = write(file_to, buffer, bytes_rd);
-	if (bytes_wr == -1)
-	{
-		close(file_from);
-		close(file_to);
-		writing_error(av[2]);
 	}
 	if (close(file_from) == -1)
 		closing_error(file_from);
